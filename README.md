@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/latest"><img src="https://img.shields.io/github/v/release/ClxybyCloner/clxy-windows-downloads?label=latest&color=7c5cff" alt="Latest release"></a>
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases"><img src="https://img.shields.io/github/downloads/ClxybyCloner/clxy-windows-downloads/total?label=downloads" alt="Total downloads"></a>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/latest"><img src="https://img.shields.io/github/v/release/ClxybyCloner/CLXY-Windows?label=latest&color=7c5cff" alt="Latest release"></a>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases"><img src="https://img.shields.io/github/downloads/ClxybyCloner/CLXY-Windows/total?label=downloads" alt="Total downloads"></a>
   <img src="https://img.shields.io/badge/Windows-10%2F11-0078D4?logo=windows&logoColor=white" alt="Windows 10/11">
   <img src="https://img.shields.io/badge/arch-x64-4f8cff" alt="x64">
 </p>
@@ -17,10 +17,10 @@
 <sub>Installer, portable ZIP, checksums, and release notes.</sub></p>
 
 <p align="center">
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-Setup-x64.exe">⬇️ <b>Download installer: CLXY 1.0.7 (x64)</b></a><br/>
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-x64.zip">📦 Portable ZIP (no install)</a>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-Setup-x64.exe">⬇️ <b>Download installer: CLXY 1.0.11 (x64)</b></a><br/>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip">📦 Portable ZIP (no install)</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.7">Release details</a>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.11">Release details</a>
   &nbsp;·&nbsp;
   <a href="#-verify-your-download">Verify your download</a>
 </p>
@@ -40,15 +40,15 @@
 
 | | |
 |---|---|
-| Release | **1.0.7** (app version `1.0.7+121`) |
+| Release | **1.0.11** (app version `1.0.11+125`) |
 | Platform | Windows 10 / 11, **x64** |
-| 🖥️ Installer | [`CLXY-1.0.7-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-Setup-x64.exe) · 20,147,441 bytes |
-| 📦 Portable | [`CLXY-1.0.7-Windows-x64.zip`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-x64.zip) · 24,153,118 bytes |
+| 🖥️ Installer | [`CLXY-1.0.11-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-Setup-x64.exe) · 20,146,421 bytes |
+| 📦 Portable | [`CLXY-1.0.11-Windows-x64.zip`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip) · 24,156,912 bytes |
 | Code signing | Unsigned, no Authenticode certificate |
-| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/SHA256SUMS.txt) · [checksum history](CHECKSUMS.txt) |
+| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/SHA256SUMS.txt) · [checksum history](CHECKSUMS.txt) |
 
 > 🗂️ This repository provides binary downloads and documentation. Installers live as
-> [Release assets](https://github.com/ClxybyCloner/clxy-windows-downloads/releases), not in git history.
+> [Release assets](https://github.com/ClxybyCloner/CLXY-Windows/releases), not in git history.
 > GitHub's **Code → Download ZIP** and the auto-generated *Source code* archives contain only this
 > repo's docs. Download the `.exe` or portable `.zip` above. Do not use a source archive.
 
@@ -78,16 +78,16 @@ Prefer no installer? Download the [portable ZIP](#-download), verify its hash, e
 In PowerShell, from your download folder:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.7-Windows-Setup-x64.exe
+Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.11-Windows-Setup-x64.exe
 ```
 
 The result must match the hash published in the
-[release notes](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.7)
+[v1.0.11 release](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.11)
 and in [`CHECKSUMS.txt`](CHECKSUMS.txt):
 
 ```text
-5e07a95534ac0d81af882833496397363129eb42397a14c2522c38f20932b4d9  CLXY-1.0.7-Windows-Setup-x64.exe
-c6d8053b9a2a7f63e1bd7adfc120f3119b7534ace75842ab86fb093ba215cedf  CLXY-1.0.7-Windows-x64.zip
+5e78825a08cb4aba273f4cb11feae0df2d54c186526b537743ae1cb3ac4b8988  CLXY-1.0.11-Windows-Setup-x64.exe
+cd0e10a94292c1cecb08e9a232c772646b3588e9094d165779600ae043900fda  CLXY-1.0.11-Windows-x64.zip
 ```
 
 A matching hash proves the file is exactly what we published. It is *not* a security audit
@@ -119,6 +119,17 @@ bundled Go core that starts locally and talks to the app over loopback. The pack
 the sign-in/onboarding UI, desktop integration, and the required legal notices
 ([`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md), [`LICENSE`](LICENSE)).
 
+### Flutter UI and Go networking core
+
+The Windows client uses Flutter for its desktop interface and runs a companion Go process for networking. The app controls the core through a local loopback API, while the core provides a local SOCKS5/HTTP proxy. For outbound connections, it supports encrypted HTTP/2 CONNECT over TCP and HTTP/3 CONNECT over QUIC, with an HTTP/2 fallback if an HTTP/3 connection cannot be established.
+
+```text
+Flutter desktop UI
+  └─ local loopback API → Go core
+       ├─ local SOCKS5 / HTTP proxy
+       └─ HTTP/2 CONNECT over TCP or HTTP/3 CONNECT over QUIC
+```
+
 CLXY is an independent third-party client; account and upstream-service access are external
 dependencies. Publishing this installer does **not** provide an account or guarantee service
 access. The upstream proxy is TCP-only on web ports **80, 443, 8080, and 8443**. UDP-dependent
@@ -147,7 +158,7 @@ It keeps the desktop layout when resized. Press <kbd>Ctrl</kbd>+<kbd>+</kbd> /
 <kbd>Ctrl</kbd>+<kbd>−</kbd> to zoom.
 
 **Older versions?**
-They stay on the [Releases page](https://github.com/ClxybyCloner/clxy-windows-downloads/releases),
+They stay on the [Releases page](https://github.com/ClxybyCloner/CLXY-Windows/releases),
 with their checksums in [`CHECKSUMS.txt`](CHECKSUMS.txt).
 
 ---
