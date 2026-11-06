@@ -4,6 +4,7 @@ All notable changes, newest first. Each version has a GitHub Release with its av
 
 | Version | App version | Date | Release notes |
 |---|---|---|---|
+| **1.0.12** | `1.0.12+126` | 2026-11-06 | [v1.0.12](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.12) |
 | **1.0.11** | `1.0.11+125` | 2026-11-02 | [v1.0.11](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.11) |
 | 1.0.7 | `1.0.7+121` | 2026-10-30 | [v1.0.7](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.7) |
 | 1.0.6 | `1.0.6+120` | 2026-10-28 | [v1.0.6](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.6) |
@@ -12,6 +13,10 @@ All notable changes, newest first. Each version has a GitHub Release with its av
 | 1.0.3 | `1.0.3+117` | 2026-10-27 | [v1.0.3](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.3) |
 
 ---
+
+## 1.0.12 (2026-11-06)
+
+- Improved direct sign-in and session renewal for certain authentication responses.
 
 ## 1.0.11 (2026-11-02)
 

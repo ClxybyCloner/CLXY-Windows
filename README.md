@@ -17,10 +17,10 @@
 <sub>Installer, portable ZIP, checksums, and release notes.</sub></p>
 
 <p align="center">
-  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-Setup-x64.exe">⬇️ <b>Download installer: CLXY 1.0.11 (x64)</b></a><br/>
-  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip">📦 Portable ZIP (no install)</a>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.12/CLXY-Windows-Setup-x64.exe">⬇️ <b>Download installer: CLXY 1.0.12 (x64)</b></a><br/>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip">📦 Portable ZIP (v1.0.11, no install)</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.11">Release details</a>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.12">Release details</a>
   &nbsp;·&nbsp;
   <a href="#-verify-your-download">Verify your download</a>
 </p>
@@ -40,12 +40,12 @@
 
 | | |
 |---|---|
-| Release | **1.0.11** (app version `1.0.11+125`) |
+| Release | **1.0.12** (app version `1.0.12+126`) |
 | Platform | Windows 10 / 11, **x64** |
-| 🖥️ Installer | [`CLXY-1.0.11-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-Setup-x64.exe) · 20,146,421 bytes |
-| 📦 Portable | [`CLXY-1.0.11-Windows-x64.zip`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip) · 24,156,912 bytes |
+| 🖥️ Installer | [`CLXY-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.12/CLXY-Windows-Setup-x64.exe) · 20,159,656 bytes |
+| 📦 Portable (v1.0.11) | [`CLXY-1.0.11-Windows-x64.zip`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip) · 24,156,912 bytes |
 | Code signing | Unsigned, no Authenticode certificate |
-| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/SHA256SUMS.txt) · [checksum history](CHECKSUMS.txt) |
+| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.12/SHA256SUMS.txt) · [checksum history](CHECKSUMS.txt) |
 
 > 🗂️ This repository provides binary downloads and documentation. Installers live as
 > [Release assets](https://github.com/ClxybyCloner/CLXY-Windows/releases), not in git history.
@@ -78,16 +78,15 @@ Prefer no installer? Download the [portable ZIP](#-download), verify its hash, e
 In PowerShell, from your download folder:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.11-Windows-Setup-x64.exe
+Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-Windows-Setup-x64.exe
 ```
 
 The result must match the hash published in the
-[v1.0.11 release](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.11)
+[v1.0.12 release](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.12)
 and in [`CHECKSUMS.txt`](CHECKSUMS.txt):
 
 ```text
-5e78825a08cb4aba273f4cb11feae0df2d54c186526b537743ae1cb3ac4b8988  CLXY-1.0.11-Windows-Setup-x64.exe
-cd0e10a94292c1cecb08e9a232c772646b3588e9094d165779600ae043900fda  CLXY-1.0.11-Windows-x64.zip
+59fe0406b58e8492a5060470ef4fb79eb0dcc39299581119abb2d3dd994bb0a3  CLXY-Windows-Setup-x64.exe
 ```
 
 A matching hash proves the file is exactly what we published. It is *not* a security audit
