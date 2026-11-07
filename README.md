@@ -14,20 +14,22 @@
 </p>
 
 <p align="center"><b>The Windows download and update channel for the CLXY desktop app.</b><br/>
-<sub>Installer, portable ZIP, checksums, and release notes.</sub></p>
+<sub>Installer, portable ZIP, Go core source, checksums, and release notes.</sub></p>
 
 <p align="center">
-  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.12/CLXY-Windows-Setup-x64.exe">⬇️ <b>Download installer: CLXY 1.0.12 (x64)</b></a><br/>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/CLXY-Windows-Setup-x64.exe">⬇️ <b>Download installer: CLXY 1.0.13 (x64)</b></a><br/>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/CLXY-Windows-core-source-v1.0.13.zip">Go core source (v1.0.13)</a><br/>
   <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip">📦 Portable ZIP (v1.0.11, no install)</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.12">Release details</a>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.13">Release details</a>
   &nbsp;·&nbsp;
   <a href="#-verify-your-download">Verify your download</a>
 </p>
 
 > ⚠️ **Unsigned installer:** this build carries no publisher signature, so Windows may show an
 > unknown-publisher / SmartScreen warning. Windows CI verified installation, app launch, and local
-> core startup. Real account sign-in and live VPN/proxy traffic were **not** tested.
+> core startup. A live Windows sign-in and live VPN/proxy traffic were **not** tested. This release
+> does not confirm a fix for HTTP 406.
 
 <p align="center">
   <img src="windows-preview.png" alt="CLXY running on Windows, showing its dark first-run sign-in screen" width="820">
@@ -40,17 +42,19 @@
 
 | | |
 |---|---|
-| Release | **1.0.12** (app version `1.0.12+126`) |
+| Release | **1.0.13** (app version `1.0.13+127`) |
 | Platform | Windows 10 / 11, **x64** |
-| 🖥️ Installer | [`CLXY-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.12/CLXY-Windows-Setup-x64.exe) · 20,159,656 bytes |
+| 🖥️ Installer | [`CLXY-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/CLXY-Windows-Setup-x64.exe) · 20,159,948 bytes |
+| Go core source | [`CLXY-Windows-core-source-v1.0.13.zip`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/CLXY-Windows-core-source-v1.0.13.zip) · 1,106,130 bytes |
 | 📦 Portable (v1.0.11) | [`CLXY-1.0.11-Windows-x64.zip`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip) · 24,156,912 bytes |
 | Code signing | Unsigned, no Authenticode certificate |
-| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.12/SHA256SUMS.txt) · [checksum history](CHECKSUMS.txt) |
+| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/SHA256SUMS.txt) · [checksum history](CHECKSUMS.txt) |
 
 > 🗂️ This repository provides binary downloads and documentation. Installers live as
 > [Release assets](https://github.com/ClxybyCloner/CLXY-Windows/releases), not in git history.
-> GitHub's **Code → Download ZIP** and the auto-generated *Source code* archives contain only this
-> repo's docs. Download the `.exe` or portable `.zip` above. Do not use a source archive.
+> GitHub's **Code → Download ZIP** and auto-generated *Source code* archives contain only this
+> documentation repository's files. The v1.0.13 Go core source is a separate Release asset. It does
+> not include the Flutter interface or installer project.
 
 ---
 
@@ -79,14 +83,16 @@ In PowerShell, from your download folder:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-Windows-Setup-x64.exe
+Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-Windows-core-source-v1.0.13.zip
 ```
 
 The result must match the hash published in the
-[v1.0.12 release](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.12)
-and in [`CHECKSUMS.txt`](CHECKSUMS.txt):
+[v1.0.13 release](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.13)
+and in [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/SHA256SUMS.txt):
 
 ```text
-59fe0406b58e8492a5060470ef4fb79eb0dcc39299581119abb2d3dd994bb0a3  CLXY-Windows-Setup-x64.exe
+97833e6487f3886a87d0ee2421f1fe1257328674d8a52aff44797ee8f2b97c77  CLXY-Windows-Setup-x64.exe
+92a396a8ddb1b051af8256a6e444596526ec6c20e554ea34332b465dd2c8635b  CLXY-Windows-core-source-v1.0.13.zip
 ```
 
 A matching hash proves the file is exactly what we published. It is *not* a security audit
@@ -140,7 +146,7 @@ the desktop app is open.
 ## ❓ FAQ
 
 **Is the source code here?**
-This repository contains only binary downloads and documentation. The app source is not published.
+This repository contains release downloads and documentation. The v1.0.13 release includes a separate source archive for the GPL-covered Go core, but not the Flutter interface or installer project.
 
 **Installer or portable?**
 Installer for a normal setup (Start-menu entry, per-user install). Portable if you want a
@@ -173,10 +179,9 @@ Full notes for every build live in [`CHANGELOG.md`](CHANGELOG.md), newest first.
 
 ## 📄 Terms
 
-© CLXY. All rights reserved. The builds published here are free to download and use.
-Please don't re-upload them elsewhere. Link people here so they can get
-the genuine, verified build. Third-party components are listed in
-[`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
+The Go core included with v1.0.13 is covered by GPL version 3.0. Its source archive includes the
+license and build instructions. The project's MIT notice remains in [`LICENSE`](LICENSE), and
+third-party components are listed in [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,7c5cff,4f8cff&height=130&section=footer&animation=fadeIn" alt="" width="100%"/>

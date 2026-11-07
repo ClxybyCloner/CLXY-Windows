@@ -4,6 +4,7 @@ All notable changes, newest first. Each version has a GitHub Release with its av
 
 | Version | App version | Date | Release notes |
 |---|---|---|---|
+| **1.0.13** | `1.0.13+127` | 2026-11-07 | [v1.0.13](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.13) |
 | **1.0.12** | `1.0.12+126` | 2026-11-06 | [v1.0.12](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.12) |
 | **1.0.11** | `1.0.11+125` | 2026-11-02 | [v1.0.11](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.11) |
 | 1.0.7 | `1.0.7+121` | 2026-10-30 | [v1.0.7](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.7) |
@@ -13,6 +14,19 @@ All notable changes, newest first. Each version has a GitHub Release with its av
 | 1.0.3 | `1.0.3+117` | 2026-10-27 | [v1.0.3](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.3) |
 
 ---
+
+## 1.0.13 (2026-11-07)
+
+- OAuth authorization-code and refresh requests now use the same request builder and reference headers.
+- Challenge cookies are passed to the sign-in site, API, and OAuth hosts.
+- The release includes a GPL version 3.0 source archive and build instructions for the Go core.
+- Go vet and tests, Flutter analysis and tests, and the Windows installer build passed. CI installed, launched, and uninstalled the app.
+- Live Windows sign-in and VPN/proxy traffic were not tested. This release does not confirm a fix for HTTP 406.
+
+```text
+97833e6487f3886a87d0ee2421f1fe1257328674d8a52aff44797ee8f2b97c77  CLXY-Windows-Setup-x64.exe
+92a396a8ddb1b051af8256a6e444596526ec6c20e554ea34332b465dd2c8635b  CLXY-Windows-core-source-v1.0.13.zip
+```
 
 ## 1.0.12 (2026-11-06)
 
