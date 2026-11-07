@@ -4,6 +4,7 @@ All notable changes, newest first. Each version has a GitHub Release with its av
 
 | Version | App version | Date | Release notes |
 |---|---|---|---|
+| **1.0.14** | `1.0.14+128` | 2026-11-07 | [v1.0.14](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.14) |
 | **1.0.13** | `1.0.13+127` | 2026-11-07 | [v1.0.13](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.13) |
 | **1.0.12** | `1.0.12+126` | 2026-11-06 | [v1.0.12](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.12) |
 | **1.0.11** | `1.0.11+125` | 2026-11-02 | [v1.0.11](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.11) |
@@ -14,6 +15,18 @@ All notable changes, newest first. Each version has a GitHub Release with its av
 | 1.0.3 | `1.0.3+117` | 2026-10-27 | [v1.0.3](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.3) |
 
 ---
+
+## 1.0.14 (2026-11-07)
+
+- Fixed the installed Windows updater to use the published asset name `CLXY-Windows-Setup-x64.exe` without a version prefix.
+- Release assets include the Windows app installer and a separate GPLv3 archive of the Go core source only. The portable ZIP remains v1.0.11.
+- Go vet and tests, Flutter analysis and tests, the Windows x64 build and version checks, and install/launch/uninstall smoke passed.
+- Live Windows sign-in and VPN/proxy traffic were not tested. This release does not claim to fix HTTP 406.
+
+```text
+773f2ea92ace4ff661de1cf7e47ba4c0d3847ff75c06cdc88d42a260efc29157  CLXY-Windows-Setup-x64.exe
+bf35983172b070dc1acbf2f70319380c59efd979b05dc26df6c5c65dfefacbaf  CLXY-Windows-core-source-v1.0.14.zip
+```
 
 ## 1.0.13 (2026-11-07)
 

@@ -17,19 +17,19 @@
 <sub>Installer, portable ZIP, Go core source, checksums, and release notes.</sub></p>
 
 <p align="center">
-  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/CLXY-Windows-Setup-x64.exe">⬇️ <b>Download installer: CLXY 1.0.13 (x64)</b></a><br/>
-  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/CLXY-Windows-core-source-v1.0.13.zip">Go core source (v1.0.13)</a><br/>
-  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip">📦 Portable ZIP (v1.0.11, no install)</a>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.14/CLXY-Windows-Setup-x64.exe"><b>Download app installer: CLXY 1.0.14 (x64)</b></a><br/>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.14/CLXY-Windows-core-source-v1.0.14.zip">GPLv3 Go core source only (v1.0.14, not the app)</a><br/>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip">Older portable ZIP (v1.0.11, not updated)</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.13">Release details</a>
+  <a href="https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.14">Release details</a>
   &nbsp;·&nbsp;
   <a href="#-verify-your-download">Verify your download</a>
 </p>
 
-> ⚠️ **Unsigned installer:** this build carries no publisher signature, so Windows may show an
-> unknown-publisher / SmartScreen warning. Windows CI verified installation, app launch, and local
-> core startup. A live Windows sign-in and live VPN/proxy traffic were **not** tested. This release
-> does not confirm a fix for HTTP 406.
+> **Unsigned installer:** this build has no publisher signature, so Windows may show an
+> unknown-publisher / SmartScreen warning. CI built the installer, checked its version metadata,
+> installed and launched the app, then uninstalled it. Live Windows sign-in and VPN/proxy traffic
+> were not tested. v1.0.14 fixes the updater download link only. It does not claim to fix HTTP 406.
 
 <p align="center">
   <img src="windows-preview.png" alt="CLXY running on Windows, showing its dark first-run sign-in screen" width="820">
@@ -42,19 +42,19 @@
 
 | | |
 |---|---|
-| Release | **1.0.13** (app version `1.0.13+127`) |
+| Release | **1.0.14** (app version `1.0.14+128`) |
 | Platform | Windows 10 / 11, **x64** |
-| 🖥️ Installer | [`CLXY-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/CLXY-Windows-Setup-x64.exe) · 20,159,948 bytes |
-| Go core source | [`CLXY-Windows-core-source-v1.0.13.zip`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/CLXY-Windows-core-source-v1.0.13.zip) · 1,106,130 bytes |
-| 📦 Portable (v1.0.11) | [`CLXY-1.0.11-Windows-x64.zip`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip) · 24,156,912 bytes |
+| App installer | [`CLXY-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.14/CLXY-Windows-Setup-x64.exe) · 20,159,265 bytes |
+| GPLv3 Go core source only, not the app | [`CLXY-Windows-core-source-v1.0.14.zip`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.14/CLXY-Windows-core-source-v1.0.14.zip) · 1,082,940 bytes |
+| Older portable ZIP (v1.0.11) | [`CLXY-1.0.11-Windows-x64.zip`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.11/CLXY-1.0.11-Windows-x64.zip) · 24,156,912 bytes |
 | Code signing | Unsigned, no Authenticode certificate |
-| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/SHA256SUMS.txt) · [checksum history](CHECKSUMS.txt) |
+| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.14/SHA256SUMS.txt) · [checksum history](CHECKSUMS.txt) |
 
 > 🗂️ This repository provides binary downloads and documentation. Installers live as
 > [Release assets](https://github.com/ClxybyCloner/CLXY-Windows/releases), not in git history.
 > GitHub's **Code → Download ZIP** and auto-generated *Source code* archives contain only this
-> documentation repository's files. The v1.0.13 Go core source is a separate Release asset. It does
-> not include the Flutter interface or installer project.
+> documentation repository's files. The v1.0.14 Go core source is a separate GPLv3 Release asset.
+> It contains only the Go core source, not the installable app, Flutter interface, or installer project.
 
 ---
 
@@ -71,9 +71,9 @@ settings, and logs in a `user-data` folder beside it. Treat that folder as priva
 
 ### 📦 Portable copy
 
-Prefer no installer? Download the [portable ZIP](#-download), verify its hash, extract the
-`CLXY` folder, and run `clxy.exe`. Keep the folder writable. The app stores its private
-`user-data` right beside the executable.
+The portable build remains v1.0.11. v1.0.14 does not include a new portable ZIP. Use the
+[older download](#-download), verify its hash, extract the `CLXY` folder, and run `clxy.exe`.
+Keep the folder writable. The app stores its private `user-data` right beside the executable.
 
 ---
 
@@ -83,16 +83,16 @@ In PowerShell, from your download folder:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-Windows-Setup-x64.exe
-Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-Windows-core-source-v1.0.13.zip
+Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-Windows-core-source-v1.0.14.zip
 ```
 
 The result must match the hash published in the
-[v1.0.13 release](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.13)
-and in [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.13/SHA256SUMS.txt):
+[v1.0.14 release](https://github.com/ClxybyCloner/CLXY-Windows/releases/tag/v1.0.14)
+and in [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/CLXY-Windows/releases/download/v1.0.14/SHA256SUMS.txt):
 
 ```text
-97833e6487f3886a87d0ee2421f1fe1257328674d8a52aff44797ee8f2b97c77  CLXY-Windows-Setup-x64.exe
-92a396a8ddb1b051af8256a6e444596526ec6c20e554ea34332b465dd2c8635b  CLXY-Windows-core-source-v1.0.13.zip
+773f2ea92ace4ff661de1cf7e47ba4c0d3847ff75c06cdc88d42a260efc29157  CLXY-Windows-Setup-x64.exe
+bf35983172b070dc1acbf2f70319380c59efd979b05dc26df6c5c65dfefacbaf  CLXY-Windows-core-source-v1.0.14.zip
 ```
 
 A matching hash proves the file is exactly what we published. It is *not* a security audit
@@ -112,7 +112,8 @@ or a publisher signature.
 
 CLXY checks this repository's latest stable release **after each successful VPN connection**
 (including reconnects). When a newer build is found, the app shows a notice with a
-**Download** button. Installed copies fetch the installer. Portable copies fetch the ZIP.
+**Download** button. Installed copies fetch the installer. The last portable ZIP is v1.0.11;
+v1.0.14 does not include a newer portable package.
 Downloading and installing always stay *your* choice: **CLXY never auto-installs updates.**
 
 ---
@@ -146,11 +147,11 @@ the desktop app is open.
 ## ❓ FAQ
 
 **Is the source code here?**
-This repository contains release downloads and documentation. The v1.0.13 release includes a separate source archive for the GPL-covered Go core, but not the Flutter interface or installer project.
+This repository contains release downloads and documentation. The v1.0.14 release includes a separate GPLv3 source archive for the Go core only. It is not the installable app and does not include the Flutter interface or installer project.
 
 **Installer or portable?**
 Installer for a normal setup (Start-menu entry, per-user install). Portable if you want a
-folder you can carry around or run without installing.
+folder you can carry around or run without installing. The available portable ZIP is v1.0.11.
 
 **Where are my settings?**
 In the `user-data` folder next to the app (installed or portable). Back it up if it matters to you.
@@ -179,8 +180,8 @@ Full notes for every build live in [`CHANGELOG.md`](CHANGELOG.md), newest first.
 
 ## 📄 Terms
 
-The Go core included with v1.0.13 is covered by GPL version 3.0. Its source archive includes the
-license and build instructions. The project's MIT notice remains in [`LICENSE`](LICENSE), and
+The Go core included with v1.0.14 is covered by GPL version 3.0. Its separate source archive includes
+the core source, GPL license, build instructions, and dependency notices. The project's MIT notice remains in [`LICENSE`](LICENSE), and
 third-party components are listed in [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
 
 <p align="center">
