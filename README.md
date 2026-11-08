@@ -1,3 +1,5 @@
+<p align="center"><a href="README.fa.md">فارسی</a></p>
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,4f8cff,7c5cff&height=210&section=header&text=CLXY&fontSize=95&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Cloner%20Xray%20for%20Windows&descSize=22&descAlignY=66" alt="CLXY" width="100%"/>
 </p>
@@ -143,25 +145,6 @@ apps and other ports may not work. Don't assume every app's traffic is protected
 the desktop app is open.
 
 ---
-
-## مسیریابی پیشرفته VPN
-
-در این معماری، از ترکیب فناوری Xray و زیرساخت Mozilla VPN برای ایجاد یک مسیر ارتباطی چندلایه استفاده میشود. هدف، افزایش انعطافپذیری در مدیریت ترافیک، جداسازی مسیرهای ارتباطی و کنترل دقیقتر ترافیک ورودی و خروجی است.
-
-ویژگیها:
-
-* مسیریابی چندلایه: ایجاد زنجیره ارتباطی میان لایه ورودی و خروجی VPN.
-* یکپارچهسازی Mozilla VPN: استفاده از زیرساخت WireGuard برای مدیریت مسیر خروجی.
-* مسیریابی هوشمند: امکان هدایت ترافیک بر اساس سیاستهای تعریفشده.
-* مدیریت تونل اختصاصی: کنترل مستقل مسیر ارتباطی و وضعیت تونل خروجی.
-* محافظت از IP: جلوگیری از افشای آدرس IP اصلی در شرایط قطع تونل.
-* مدیریت خطا و بازیابی: پیشبینی سازوکارهای کنترل اتصال و بازیابی مسیر ارتباطی.
-
-ساختار ارتباطی:
-
-VLESS → Xray Core → Linux Routing → Mozilla VPN → Internet
-
-این ساختار با هدف ایجاد یک زیرساخت ارتباطی منعطف، قابل توسعه و قابل مدیریت طراحی شده است.
 
 ## Advanced VPN Routing
 
