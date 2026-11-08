@@ -144,6 +144,48 @@ the desktop app is open.
 
 ---
 
+## مسیریابی پیشرفته VPN (Advanced VPN Routing)
+
+در این معماری، از ترکیب فناوری Xray و زیرساخت Mozilla VPN برای ایجاد یک مسیر ارتباطی چندلایه استفاده میشود. هدف، افزایش انعطافپذیری در مدیریت ترافیک، جداسازی مسیرهای ارتباطی و کنترل دقیقتر ترافیک ورودی و خروجی است.
+
+ویژگیها:
+
+* مسیریابی چندلایه: ایجاد زنجیره ارتباطی میان لایه ورودی و خروجی VPN.
+* یکپارچهسازی Mozilla VPN: استفاده از زیرساخت WireGuard برای مدیریت مسیر خروجی.
+* مسیریابی هوشمند: امکان هدایت ترافیک بر اساس سیاستهای تعریفشده.
+* مدیریت تونل اختصاصی: کنترل مستقل مسیر ارتباطی و وضعیت تونل خروجی.
+* محافظت از IP: جلوگیری از افشای آدرس IP اصلی در شرایط قطع تونل.
+* مدیریت خطا و بازیابی: پیشبینی سازوکارهای کنترل اتصال و بازیابی مسیر ارتباطی.
+
+ساختار ارتباطی:
+
+VLESS → Xray Core → Linux Routing → Mozilla VPN → Internet
+
+این ساختار با هدف ایجاد یک زیرساخت ارتباطی منعطف، قابل توسعه و قابل مدیریت طراحی شده است.
+
+-----
+
+### Advanced VPN Routing
+
+This architecture combines Xray technology with the Mozilla VPN infrastructure to establish a multi-layered network communication path. Its primary goal is to improve traffic management flexibility, isolate network routes, and provide more precise control over inbound and outbound traffic.
+
+Features:
+
+* Multi-Layer Routing: Establishes a chained communication path between the VPN ingress and egress layers.
+* Mozilla VPN Integration: Leverages WireGuard infrastructure to manage outbound traffic routing.
+* Smart Traffic Routing: Directs traffic based on predefined routing policies.
+* Dedicated Tunnel Management: Provides independent control over the outbound tunnel and its connection status.
+* IP Leak Protection: Prevents exposure of the original server IP in the event of a tunnel failure.
+* Fault Handling & Recovery: Incorporates mechanisms for connection monitoring and automatic route recovery.
+
+Network Architecture:
+
+VLESS → Xray Core → Linux Routing → Mozilla VPN → Internet
+
+This architecture is designed to provide a flexible, scalable, and manageable networking infrastructure.
+
+---
+
 ## ❓ FAQ
 
 **Is the source code here?**
