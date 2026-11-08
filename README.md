@@ -173,7 +173,7 @@ Features:
 
 * Multi-Layer Routing: Establishes a chained communication path between the VPN ingress and egress layers.
 * Mozilla VPN Integration: Leverages WireGuard infrastructure to manage outbound traffic routing.
-* Smart Traffic Routing: Directs traffic based on predefined routing policies.
+* Smart Traffic Routing: Directs network traffic based on predefined routing policies.
 * Dedicated Tunnel Management: Provides independent control over the outbound tunnel and its connection status.
 * IP Leak Protection: Prevents exposure of the original server IP in the event of a tunnel failure.
 * Fault Handling & Recovery: Incorporates mechanisms for connection monitoring and automatic route recovery.
